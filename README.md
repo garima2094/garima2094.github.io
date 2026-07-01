@@ -29,21 +29,22 @@ npm run preview
 
 ## Deploy to GitHub Pages
 
-1. Create a GitHub repository named **`garima2094.github.io`** under your GitHub account.
-2. Push this project to the `main` branch.
-3. In GitHub repo settings → **Pages** → set **Source** to **GitHub Actions**.
-4. Every push to `main` will build and deploy automatically.
+1. Push this project to the `main` branch of **`garima2094/garima2094.github.io`**.
+2. Open repo **Settings → Pages**.
+3. Set **Build and deployment → Source** to **GitHub Actions** (not "Deploy from branch").
+4. Push to `main` — the workflow builds `dist/` and deploys the compiled site.
 
-### First-time push
+> **Important:** If Pages is set to deploy the `main` branch directly, the site will break with a MIME type error because GitHub will serve raw `/src/main.tsx` instead of the built JavaScript bundle.
+
+### After pushing
 
 ```bash
-git init
 git add .
-git commit -m "Initial portfolio website"
-git branch -M main
-git remote add origin https://github.com/garima2094/garima2094.github.io.git
-git push -u origin main
+git commit -m "Fix GitHub Pages deployment"
+git push origin main
 ```
+
+Then check **Actions** tab — wait for the "Deploy to GitHub Pages" workflow to finish.
 
 ## Customize
 
