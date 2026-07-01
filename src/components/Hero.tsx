@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker } from 'react-icons/hi'
+import { HiOutlineMail, HiOutlineLocationMarker } from 'react-icons/hi'
 import { profile } from '../data/resume'
 
 const roles = ['Frontend Developer', 'React Engineer', 'UI Craftsman', 'Team Lead']
@@ -92,9 +92,6 @@ export function Hero() {
             </span>
             <span>
               <HiOutlineMail /> {profile.email}
-            </span>
-            <span>
-              <HiOutlinePhone /> {profile.phone}
             </span>
           </motion.div>
         </div>

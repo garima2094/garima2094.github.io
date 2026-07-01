@@ -4,7 +4,6 @@ export const profile = {
   tagline: 'Creative Frontend Developer',
   location: 'Indore, India',
   experience: '8+ Years',
-  phone: '+91-9806740155',
   email: 'jaingarima2094@gmail.com',
   website: 'https://garima2094.github.io/',
   github: 'https://github.com/garima2094',

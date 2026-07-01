@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker } from 'react-icons/hi'
+import { HiOutlineMail, HiOutlineLocationMarker } from 'react-icons/hi'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SectionHeading } from './SectionHeading'
 import { profile } from '../data/resume'
@@ -25,10 +25,6 @@ export function Contact() {
             <a href={`mailto:${profile.email}`} className="contact__item">
               <HiOutlineMail />
               <span>{profile.email}</span>
-            </a>
-            <a href={`tel:${profile.phone}`} className="contact__item">
-              <HiOutlinePhone />
-              <span>{profile.phone}</span>
             </a>
             <span className="contact__item">
               <HiOutlineLocationMarker />
